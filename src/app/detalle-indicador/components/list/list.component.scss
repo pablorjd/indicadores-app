@@ -1,0 +1,16 @@
+ion-content {
+  ion-card {
+    ion-card-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .m-16 {
+      padding: 16px 16px !important;
+    }
+
+  }
+}
+
+

@@ -1,0 +1,39 @@
+<ion-header  [translucent]="true">
+
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button routerLink="/">
+        <ion-icon name="arrow-back-circle-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button id="open-modal">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Nombre del Indicador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <app-list></app-list>
+
+
+
+
+
+
+
+
+  <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content>
+        <!-- <ion-searchbar placeholder="Search" (click)="modal.setCurrentBreakpoint(0.75)"></ion-searchbar> -->
+        <ion-datetime class="dt"></ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

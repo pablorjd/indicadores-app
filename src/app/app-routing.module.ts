@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'detalle-indicador',
+    loadChildren: () => import('./detalle-indicador/detalle-indicador.module').then( m => m.DetalleIndicadorPageModule)
+  },
 ];
 
 @NgModule({
